@@ -46,8 +46,8 @@
 					<li class="nav-item"><a class="nav-link" href="#">Directory</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Get Involved</a></li>
 				</ul>
-				<button class="btn btn-success me-3" type="button" style="background: var(--bs-blue);color: #FFFFFF;border-style: none;border-color: #e5ac3b;font-family: 'Maven Pro', sans-serif;">REGISTER</button>
-				<button class="btn btn-warning" type="button" style="background: var(--bs-blue);color: #FFFFFF;border-style: none;border-color: #89b3ba;font-family: 'Maven Pro', sans-serif;">LOGIN</button>
+				<button class="btn btn-primary me-3" type="button" style="background: var(--bs-blue);color: #FFFFFF;border-style: none;border-color: #e5ac3b;font-family: 'Maven Pro', sans-serif;" data-bs-toggle="modal" data-bs-target="#loginModal">REGISTER</button>
+				<button class="btn btn-primary" type="button" style="background: var(--bs-blue);color: #FFFFFF;border-style: none;border-color: #89b3ba;font-family: 'Maven Pro', sans-serif;" data-bs-toggle="modal" data-bs-target="#registerModal">LOGIN</button>
 			</div>
 		</div>
 	</nav>
@@ -56,21 +56,21 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="loginModalLabel">Login</h5>
+					<h5 class="modal-title" id="loginModalLabel" style="font-family: 'Open Sans', sans-serif;">Register</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="mb-3">
-							<label for="loginEmail" class="col-form-label">Email:</label>
+							<label for="loginEmail" class="col-form-label" style="font-family: 'Open Sans', sans-serif;">Email:</label>
 							<input type="email" class="form-control" id="loginEmail"> </div>
 						<div class="mb-3">
-							<label for="loginPassword" class="col-form-label">Password:</label>
+							<label for="loginPassword" class="col-form-label" style="font-family: 'Open Sans', sans-serif;">Password:</label>
 							<input type="password" class="form-control" id="loginPassword"> </div>
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Open Sans', sans-serif;">Close</button>
 					<button type="button" class="btn btn-primary">Login</button>
 				</div>
 			</div>
@@ -81,25 +81,25 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="registerModalLabel">Register</h5>
+					<h5 class="modal-title" id="registerModalLabel" style="font-family: 'Open Sans', sans-serif;">Login</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="mb-3">
-							<label for="registerEmail" class="col-form-label">Email:</label>
+							<label for="registerEmail" class="col-form-label" style="font-family: 'Open Sans', sans-serif;">Email:</label>
 							<input type="email" class="form-control" id="registerEmail"> </div>
 						<div class="mb-3">
-							<label for="registerPassword" class="col-form-label">Password:</label>
+							<label for="registerPassword" class="col-form-label" style="font-family: 'Open Sans', sans-serif;">Password:</label>
 							<input type="password" class="form-control" id="registerPassword"> </div>
 						<div class="mb-3">
-							<label for="registerConfirmPassword" class="col-form-label">Confirm Password:</label>
+							<label for="registerConfirmPassword" class="col-form-label" style="font-family: 'Open Sans', sans-serif;">Confirm Password:</label>
 							<input type="password" class="form-control" id="registerConfirmPassword"> </div>
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Register</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Open Sans', sans-serif;">Close</button>
+					<button type="button" class="btn btn-primary" style="font-family: 'Open Sans', sans-serif;">Register</button>
 				</div>
 			</div>
 		</div>
@@ -173,12 +173,12 @@
 			</div>
 			<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="font-family: 'Open Sans', sans-serif;">
 				<div class="col">
-					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/placeholder.png">
 						<div class="card-body p-4">
 							<p class="text-primary card-text mb-0">Article</p>
 							<h4 class="card-title" style="font-family: 'Maven Pro', sans-serif;">Lorem libero donec</h4>
 							<p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/placeholder.png">
 								<div>
 									<p class="fw-bold mb-0">Odessa Faye Osilla</p>
 									<p class="text-muted mb-0">Erat netus</p>
@@ -188,12 +188,12 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/placeholder.png">
 						<div class="card-body p-4">
 							<p class="text-primary card-text mb-0">Article</p>
 							<h4 class="card-title" style="font-family: 'Maven Pro', sans-serif;">Lorem libero donec</h4>
 							<p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/placeholder.png">
 								<div>
 									<p class="fw-bold mb-0">Len Marjorie Sy</p>
 									<p class="text-muted mb-0">Erat netus</p>
@@ -203,12 +203,12 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+					<div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/placeholder.png">
 						<div class="card-body p-4">
 							<p class="text-primary card-text mb-0">Article</p>
 							<h4 class="card-title" style="font-family: 'Maven Pro', sans-serif;">Lorem libero donec</h4>
 							<p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+							<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/placeholder.png">
 								<div>
 									<p class="fw-bold mb-0">Wilfredo Louis Sumayan</p>
 									<p class="text-muted mb-0">Erat netus</p>
