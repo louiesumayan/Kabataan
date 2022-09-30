@@ -1,620 +1,1447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Kabataan - A Mental Health Builder for Filipino Youth</title>
+    <!-- ROBOTS META TAGS -->
+    <meta name="robots" content="noindex" />
+    <!-- FACEBOOK META TAGS -->
+    <meta
+      property="og:title"
+      content="Kabataan - A Mental Health Builder for Filipino Youth"
+    />
+    <meta
+      property="og:description"
+      content="Kabataan.ph is a website that provides information about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem."
+    />
+    <meta
+      property="og:image"
+      content="https://kabataan.ph/assets/img/Feature.png"
+    />
+    <meta property="og:url" content="https://kabataan.ph/" />
+    <meta
+      property="og:site_name"
+      content="Kabataan - A Mental Health Builder for Filipino Youth"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <!-- TWITTER META TAGS -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kabataan.ph" />
+    <meta name="twitter:creator" content="@kabataan.ph" />
+    <meta
+      name="twitter:title"
+      content="Kabataan - A Mental Health Builder for Filipino Youth"
+    />
+    <meta
+      name="twitter:description"
+      content="Kabataan.ph is a website that provides information about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kabataan.ph/assets/img/Feature.png"
+    />
+    <!-- FAVICONS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Kabataan - A Mental Health Builder for Filipino Youth</title>
-	<!-- ROBOTS META TAGS -->
-	<meta name="robots" content="noindex">
-	<!-- FACEBOOK META TAGS -->
-	<meta property="og:title" content="Kabataan - A Mental Health Builder for Filipino Youth">
-	<meta property="og:description" content="Kabataan.ph is a website that provides information about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.">
-	<meta property="og:image" content="https://kabataan.ph/assets/img/Feature.png">
-	<meta property="og:url" content="https://kabataan.ph/">
-	<meta property="og:site_name" content="Kabataan - A Mental Health Builder for Filipino Youth">
-	<meta property="og:type" content="website">
-	<meta property="og:locale" content="en_US">
-	<!-- TWITTER META TAGS -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@kabataan.ph">
-	<meta name="twitter:creator" content="@kabataan.ph">
-	<meta name="twitter:title" content="Kabataan - A Mental Health Builder for Filipino Youth">
-	<meta name="twitter:description" content="Kabataan.ph is a website that provides information about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.">
-	<meta name="twitter:image" content="https://kabataan.ph/assets/img/Feature.png">
-	<!-- FAVICONS -->
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-	<link rel="manifest" href="assets/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-	<link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css"> 
-</head>
-
-<body>
-	<!-- NAVIGATION BAR -->
-	<nav class="navbar navbar-light navbar-expand-lg py-3" style="border-bottom: 1px solid rgb(0,0,0) ;">
-		<div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="https://kabataan.ph/"><span>KABATAAN.PH</span></a>
-			<button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navcol-1">
-				<ul class="navbar-nav me-auto">
-					<li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item" href="about.html">About Us</a> </li>
-							<li> <a class="dropdown-item" href="mental-health.html">About Mental Health</a> </li>
-							<li> <a class="dropdown-item" href="testimonials.html">Testimonials</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">SUPPORT</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item" href="peer-to-peer-chat.html">Peer-to-Peer Chat</a> </li>
-							<li> <a class="dropdown-item" href="group-sessions.html">Group Sessions</a> </li>
-							<li> <a class="dropdown-item" href="family-advisory.html">Family Advisory</a> </li>
-							<li> <a class="dropdown-item" href="mental-health-test.html">Mental Health Check</a> </li>
-							<li> <a class="dropdown-item" href="https://community.kabataan.ph/" target="blank">Community Forums</a> </li>
-							<li> <a class="dropdown-item" href="faq.html">Mental Health FAQ</a> </li>
-							<li> <a class="dropdown-item" href="glossary.html">Glossary of Terms</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">HEAL</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item" href="blog.html">Blog</a> </li>
-							<li> <a class="dropdown-item" href="directory.html">Directory</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">ADVOCATE</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item" href="volunteer.html">Volunteer With Us</a> </li>
-							<li> <a class="dropdown-item" href="donate.html">How to Donate</a> </li>
-							<li> <a class="dropdown-item" href="youth-programs.html">Youth Programs</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">RESPOND</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item" href="hotlines.html">Emergency Help</a> </li>
-						</ul>
-					</li>
-				</ul><a class="btn btn-primary" role="button" style="margin-right: 15px;" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTER</a><a class="btn btn-outline-primary" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a> </div>
-		</div>
-	</nav>
-	<!-- END NAVIGATION BAR -->
-	<!-- HERO -->
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav
+      class="navbar navbar-light navbar-expand-lg py-3"
+      style="border-bottom: 1px solid rgb(0, 0, 0)"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="https://kabataan.ph/"
+          ><span>KABATAAN.PH</span></a
+        >
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle "
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >ABOUT</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="mental-health.html"
+                    >About Mental Health</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="testimonials.html"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >SUPPORT</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="peer-to-peer-chat.html"
+                    >Peer-to-Peer Chat</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="group-sessions.html"
+                    >Group Sessions</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="family-advisory.html"
+                    >Family Advisory</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mental-health-test.html"
+                    >Mental Health Check</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://community.kabataan.ph/"
+                    target="blank"
+                    >Community Forums</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faq.html">Mental Health FAQ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="glossary.html"
+                    >Glossary of Terms</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >HEAL</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="directory.html">Directory</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >ADVOCATE</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="volunteer.html"
+                    >Volunteer With Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="donate.html">How to Donate</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="youth-programs.html"
+                    >Youth Programs</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >RESPOND</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="hotlines.html"
+                    >Emergency Help</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a
+            class="btn btn-dark"
+            role="button"
+            style="margin-right: 15px"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+            >REGISTER</a
+          ><a
+            class="btn btn-outline-dark text-muted
+            role="button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            >LOGIN</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVIGATION BAR -->
+    <!-- HERO -->
     <section class="py-4 py-xl-5">
-        <div>
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-                        <div>
-                            <h1 class="display-1 text-uppercase fw-bold text-center mb-3">How are you feeling today?</h1>
-                            <p class="lead fs-3 mb-4">If you're feeling lost, confused, or helpless, we can help. Get support for your mental health now.</p><a class="btn btn-primary btn-lg" role="button" href="https://kabataan.ph/mental-health-test">GET HELP</a>
-                        </div>
-                    </div>
-                </div>
+      <div>
+        <div class="container h-100">
+          <div class="row h-100">
+            <div
+              class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center"
+            >
+              <div>
+                <h1 class="display-1 text-uppercase fw-bold text-center mb-3">
+                  How are you feeling today?
+                </h1>
+                <p class="lead fs-3 mb-4">
+                  If you're feeling lost, confused, or helpless, we can help.
+                  Get support for your mental health now.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-	<section>
-		<div style="height: 600px;background: url(&quot;assets/img/placeholder.png&quot;);"></div>
-		<div class="container h-100 position-relative" style="top: -50px;">
-			<div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
-				<div class="col">
-					<div class="card">
-						<div class="card-body pt-5 p-4">
-							<div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;">
-								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-shield-plus">
-									<path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"></path>
-									<path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"></path>
-								</svg>
-							</div>
-							<h4 class="card-title">GET COUNSELING</h4>
-							<p class="card-text">If you're struggling with your mental health, please seek counseling. It can be tough to deal with mental health issues alone, and counseling can help you get the support and tools you need to cope. Don't suffer in silence - reach out for help.</p>
-						</div>
-						<div class="card-footer p-4 py-3"><a href="mental-health-test.html">MENTAL HEALTH CHECK&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a></div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<div class="card-body pt-5 p-4">
-							<div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;">
-								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-megaphone">
-									<path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"></path>
-								</svg>
-							</div>
-							<h4 class="card-title">VOLUNTEER</h4>
-							<p class="card-text">If you are passionate about mental health and want to make a difference in your community, consider volunteering with a local organization that provides mental health services. You can help people in your community struggling with mental health issues by providing support and understanding. Contact a local mental health organization today to learn more about how you can help! You can also learn more about mental health and how to support others through your volunteer work.</p>
-						</div>
-						<div class="card-footer p-4 py-3"><a href="volunteer.html">GET INVOLVED&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a></div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<div class="card-body pt-5 p-4">
-							<div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;">
-								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart">
-									<path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-								</svg>
-							</div>
-							<h4 class="card-title">DONATE</h4>
-							<p class="card-text">Mental health touches all of us, yet it is often left out of the conversation. If you are able, please donate to mental health charities. Your donation can help others get the treatment and support they need to live happy and healthy lives.</p>
-						</div>
-						<div class="card-footer p-4 py-3"><a href="donate.html">HOW TO DONATE&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END HERO -->
-	<!-- ABOUT KABATAAN -->
-	<section>
-		<div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="display-3 text-uppercase fw-bold text-center" style="padding-bottom: 10px;">KABATAAN.PH</h2> </div>
-				</div>
-				<div class="row">
-					<div class="col-md-6"><img class="img-fluid" src="assets/img/omar-lopez-T6zu4jFhVwg-unsplash (1).jpg">
-						<h3 class="display-6" style="padding-bottom: 0px;padding-top: 10px;">About Kabataan.ph</h3>
-						<p><span style="color: rgb(36, 41, 47);">Kabataan.ph is a website that provides information and resources about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.</span>
-							<br> </p>
-							<a class="btn btn-primary" role="button" style="margin-top: 0px;margin-bottom: 15px;" href="about.html">LEARN MORE</a>
-					</div>
-					<div class="col"><img class="img-fluid" src="assets/img/emma-simpson-mNGaaLeWEp0-unsplash (1).jpg">
-						<h3 class="display-6" style="padding-top: 10px;">What is Mental Health?</h3>
-						<p>Mental health refers to our emotional, psychological, and social well-being. It is how we think, feel, and act to cope with life. It also helps determine how we handle stress, relate to others, and make choices.</p>
-						<a class="btn btn-primary" role="button" style="margin-top: 0px;" href="mental-health.html">LEARN MORE</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container py-4 py-xl-5">
-			<div class="text-center text-white-50 bg-primary border rounded border-0 p-3">
-				<div class="row row-cols-2 row-cols-md-4">
-					<div class="col">
-						<div class="p-3">
-							<h4 class="display-5 fw-bold text-white mb-0">100k+</h4>
-							<p class="mb-0">Social Media Followers</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="p-3">
-							<h4 class="display-5 fw-bold text-white mb-0">45+</h4>
-							<p class="mb-0">Activities and Campaigns</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="p-3">
-							<h4 class="display-5 fw-bold text-white mb-0">67</h4>
-							<p class="mb-0">Partners</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="p-3">
-							<h4 class="display-5 fw-bold text-white mb-0">4</h4>
-							<p class="mb-0">Offices Nationwide</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END ABOUT KABATAAN -->
-	<!-- CAMPAIGNS -->
-	<section>
-		<div>
-			<div class="container py-4 py-xl-5">
-				<div class="row mb-5">
-					<div class="col-md-8 col-xl-6 text-center mx-auto">
-						<h2 class="display-3 fw-bold text-center">OUR CAMPAIGNS</h2>
-						<p class="w-lg-50">The #40SecondsOfHope, #VoicesOfHope, #UsapTayo, and #KabataanTalks campaigns are all youth mental health campaigns that aim to raise awareness about mental health and provide support to those struggling with mental illness. These campaigns provide a platform for young people to share their stories and offer hope and support to others.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg">
-							<div class="py-4">
-								<h4>#40SecondsOfHope</h4>
-								<p>The #40SecondsOfHope campaign encourages young people to take action and get help if they feel suicidal. The campaign provides information on how to get help and support someone who is suicidal. The campaign also encourages young people to talk about their mental health and seek help if they struggle.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/pablo-heimplatz-EAvS-4KnGrk-unsplash.jpg">
-							<div class="py-4">
-								<h4>#VoicesOfHope</h4>
-								<p>The #VoicesofHope campaign is a youth mental health campaign that aims to provide support and resources to young people struggling with mental health. The campaign offers a platform for young people to share their stories and experiences and to connect with others who are going through similar struggles. The campaign also offers information and support on various topics related to mental health and provides a space for open discussion and dialogue about mental health.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/kelly-sikkema-XX2WTbLr3r8-unsplash.jpg">
-							<div class="py-4">
-								<h4>#UsapTayo</h4>
-								<p>#UsapTayo is a Youth Mental Health Campaign aimed at promoting mental health and wellbeing among young people in the Philippines. The campaign encourages young people to talk about their mental health, seek help if they are struggling, and support each other.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col d-grid">
-						<div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/papaioannou-kostas-tysecUm5HJA-unsplash.jpg">
-							<div class="py-4">
-								<h4>#KabataanTalks</h4>
-								<p>KabataanTalks is a national youth-led mental health campaign in the Philippines that aims to break the stigma around mental health and encourage open discussion about mental health issues among young people. The campaign provides a platform for young people to share their stories and experiences with mental health and to connect with others who can relate to their struggles. KabataanTalks also provides resources and information on mental health and offers support to young people struggling with mental health.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END CAMPAIGNS -->
-	<!-- DATABASE AND DIRECTORY -->
-	<section class="py-4 py-xl-5">
-		<div class="container h-100">
-			<div class="text-white bg-primary border rounded border-0 p-4 py-5">
-				<div class="row h-100">
-					<div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-						<div>
-							<h2 class="display-3 text-uppercase fw-bold text-white mb-3">Database &amp; Directory</h2>
-							<p class="mb-4">Kabataan has a directory of mental health facilities, services, and organizations that can help people in need. These resources can provide support and assistance to those who are struggling with mental health issues. If you or someone you know requires mental health support, please consider reaching out to one of these organizations.</p>
-							<a class="btn btn-light fs-5 py-2 px-4" role="button" href="directory.html">BROWSE</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END DATABASE AND DIRECTORY -->
-	<!-- LATEST NEWS AND UPDATES -->
     <section>
-        <div>
-            <div class="container py-4 py-xl-5">
-                <div class="row mb-5">
-                    <div class="col-md-8 col-xl-6 text-center mx-auto">
-                        <h2 class="display-3 text-uppercase fw-bold">Latest News and Updates</h2>
-                        <p class="w-lg-50">Keep updated with the latest news and updates about Youth Mental Health in the Philippines by reading our blog posts!</p>
-                    </div>
+      <div
+        style="height: 600px; background: url('assets/img/placeholder.png')"
+      ></div>
+      <div class="container h-100 position-relative" style="top: -50px">
+        <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body pt-5 p-4">
+                <div
+                  class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg"
+                  style="top: -30px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-shield-plus"
+                  >
+                    <path
+                      d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+                    ></path>
+                    <path
+                      d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-                    <div class="col">
-                        <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/lukas-rychvalsky-o0GhPKxe5GM-unsplash.jpg">
-                            <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
-                                <h4 class="card-title">How to cope with feeling lonely at school</h4>
-                                <p class="card-text">If you're feeling lonely at school, you can do a few things to cope. First, try to find a club or activity you're interested in. This will help you make friends who share your interests. You can also try talking to your classmates and getting to know them better. Finally, talk to a teacher or counselor if you're still feeling lonely. They can help you find ways to make friends and feel less alone.</p>
-                                <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/113265186.jpg">
-                                    <div>
-                                        <p class="fw-bold mb-0">Len Marjorie Sy</p>
-                                        <p class="text-muted mb-0">Author</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/giulia-bertelli-dvXGnwnYweM-unsplash.jpg">
-                            <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
-                                <h4 class="card-title">How I learnt to show up for myself like I show up for others</h4>
-                                <p class="card-text">I realized that I needed to start showing up for myself the way I show up for others. I started by making time for myself every day, even if it was just 10 minutes. It wasn't always easy, but I slowly started to feel better and more like myself again. I also began to say no to things that didn't serve me and to make my wellbeing a priority.</p>
-                                <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/294766511_10159238738653192_4062573335905881321_n.jpg">
-                                    <div>
-                                        <p class="fw-bold mb-0">Odessa Faye Osilla</p>
-                                        <p class="text-muted mb-0">Author</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/hannah-busing-Zyx1bK9mqmA-unsplash.jpg">
-                            <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
-                                <h4 class="card-title">The validation of self-harm scars among the mental health community</h4>
-                                <p class="card-text">The validation of self-harm scars in the mental health community is a necessary process that allows individuals who self-harm to feel understood and supported. Validating self-harm scars can help individuals feel more comfortable in their own skin and encourage them to seek help for their mental health needs.</p>
-                                <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/113756693.jpg">
-                                    <div>
-                                        <p class="fw-bold mb-0">Wilfredo Louis Sumayan</p>
-                                        <p class="text-muted mb-0">Author</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h4 class="card-title">GET COUNSELING</h4>
+                <p class="card-text">
+                  If you're struggling with your mental health, please seek
+                  counseling. It can be tough to deal with mental health issues
+                  alone, and counseling can help you get the support and tools
+                  you need to cope. Don't suffer in silence - reach out for
+                  help.
+                </p>
+              </div>
+              <div class="card-footer p-4 py-3">
+                <a href="mental-health-test.html"
+                  >MENTAL HEALTH CHECK&nbsp;<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-arrow-right"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    ></path></svg
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body pt-5 p-4">
+                <div
+                  class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg"
+                  style="top: -30px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-megaphone"
+                  >
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="card-title">VOLUNTEER</h4>
+                <p class="card-text">
+                  If you are passionate about mental health and want to make a
+                  difference in your community, consider volunteering with a
+                  local organization that provides mental health services. You
+                  can help people in your community struggling with mental
+                  health issues by providing support and understanding. Contact
+                  a local mental health organization today to learn more about
+                  how you can help! You can also learn more about mental health
+                  and how to support others through your volunteer work.
+                </p>
+              </div>
+              <div class="card-footer p-4 py-3">
+                <a href="volunteer.html"
+                  >GET INVOLVED&nbsp;<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-arrow-right"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body pt-5 p-4">
+                <div
+                  class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg"
+                  style="top: -30px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-heart"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="card-title">DONATE</h4>
+                <p class="card-text">
+                  Mental health touches all of us, yet it is often left out of
+                  the conversation. If you are able, please donate to mental
+                  health charities. Your donation can help others get the
+                  treatment and support they need to live happy and healthy
+                  lives.
+                </p>
+              </div>
+              <div class="card-footer p-4 py-3">
+                <a href="donate.html"
+                  >HOW TO DONATE&nbsp;<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-arrow-right"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-	<!-- END LATEST NEWS AND UPDATES -->
-	<!-- TESTIMONIALS -->
+    <!-- END HERO -->
+    <!-- ABOUT KABATAAN -->
     <section>
-        <div>
-            <div class="container py-4 py-xl-5">
-                <div class="row mb-5">
-                    <div class="col-md-8 col-xl-6 text-center mx-auto">
-                        <h2 class="display-3 text-uppercase fw-bold">Testimonials</h2>
-                    </div>
-                </div>
-                <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">I am so grateful for the Youth Mental Health services offered by Kabataan. They have been an enormous help in my journey to recovery. The staff is incredibly understanding and supportive, and they have helped me to develop the skills I need to cope with my mental health challenges. I would highly recommend their services to anyone struggling with their mental health. Thank you, Kabataan, for everything.</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar%20(5).svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Mylene</p>
-                                    <p class="text-muted mb-0">Caloocan City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">Kabataan offers vital mental health services to youth in need. The support and care they provide are top-notch and have helped me immensely. I highly recommend their services to anyone struggling with mental health issues.</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar%20(4).svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Arlene</p>
-                                    <p class="text-muted mb-0">Antipolo City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">Kabataan offers an excellent youth mental health service. The counselors are caring and professional and seem to understand what young people are going through. They've helped me a lot, and I would recommend them to anyone who needs help. Thank you, Kabataan!</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar%20(3).svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Roselyn</p>
-                                    <p class="text-muted mb-0">Basey, Samar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">Kabataan's youth mental health services are top-notch! They can provide support and guidance to young people who may be struggling with mental health issues. Their services are confidential and professional, and they can offer a safe space for young people to talk about their problems. I would highly recommend Kabataan to any young person struggling with mental health.</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar%20(1).svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Jan Camille</p>
-                                    <p class="text-muted mb-0">Tacloban City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">I'm so grateful for the Youth Mental Health services offered by Kabataan. They've provided me with a safe space to discuss my mental health and get the support I need. They've also helped me to understand my mental health and to develop healthy coping mechanisms. I highly recommend their services to anyone struggling with their mental health.</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar.svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Melalyn</p>
-                                    <p class="text-muted mb-0">Quezon City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <p class="bg-light border rounded border-0 border-light p-4">If you or someone you know is struggling with mental health, I highly recommend Kabataan's youth mental health services. They offer a safe and supportive space for young people to talk about their experiences and get their needed help. The staff is caring and knowledgeable, and they can help you find the resources you need to get through this tough time. Thank you, Kabataan, for everything you do!</p>
-                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/avatar%20(2).svg">
-                                <div>
-                                    <p class="fw-bold text-primary mb-0">Rommel</p>
-                                    <p class="text-muted mb-0">Marikina City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2
+                class="display-3 text-uppercase fw-bold text-center"
+                style="padding-bottom: 10px"
+              >
+                KABATAAN.PH
+              </h2>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="img-fluid"
+                src="assets/img/omar-lopez-T6zu4jFhVwg-unsplash (1).jpg"
+              />
+              <h3
+                class="display-6"
+                style="padding-bottom: 0px; padding-top: 10px"
+              >
+                About Kabataan.ph
+              </h3>
+              <p>
+                <span style="color: rgb(36, 41, 47)"
+                  >Kabataan.ph is a website that provides information and
+                  resources about mental health and wellbeing. The website aims
+                  to help people understand and manage their mental health and
+                  to provide support and information to those who care for
+                  someone with a mental health problem.</span
+                >
+                <br />
+              </p>
+              <a
+                class="btn btn-primary"
+                role="button"
+                style="margin-top: 0px; margin-bottom: 15px"
+                href="about.html"
+                >LEARN MORE</a
+              >
+            </div>
+            <div class="col">
+              <img
+                class="img-fluid"
+                src="assets/img/emma-simpson-mNGaaLeWEp0-unsplash (1).jpg"
+              />
+              <h3 class="display-6" style="padding-top: 10px">
+                What is Mental Health?
+              </h3>
+              <p>
+                Mental health refers to our emotional, psychological, and social
+                well-being. It is how we think, feel, and act to cope with life.
+                It also helps determine how we handle stress, relate to others,
+                and make choices.
+              </p>
+              <a
+                class="btn btn-primary"
+                role="button"
+                style="margin-top: 0px"
+                href="mental-health.html"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container py-4 py-xl-5">
+        <div
+          class="text-center text-white-50 bg-primary border rounded border-0 p-3"
+        >
+          <div class="row row-cols-2 row-cols-md-4">
+            <div class="col">
+              <div class="p-3">
+                <h4 class="display-5 fw-bold text-white mb-0">100k+</h4>
+                <p class="mb-0">Social Media Followers</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <h4 class="display-5 fw-bold text-white mb-0">45+</h4>
+                <p class="mb-0">Activities and Campaigns</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <h4 class="display-5 fw-bold text-white mb-0">67</h4>
+                <p class="mb-0">Partners</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <h4 class="display-5 fw-bold text-white mb-0">4</h4>
+                <p class="mb-0">Offices Nationwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-	<!-- END TESTIMONIALS -->
-	<!-- COMMUNITY -->
-	<section class="py-4 py-xl-5">
-		<div>
-			<div class="container h-100">
-				<div class="row h-100">
-					<div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-						<div>
-							<h2 class="display-3 text-uppercase fw-bold mb-3">JOIN THE COMMUNITY!</h2>
-							<p class="mb-4">Looking for a supportive community of others who understand what you're going through? Look no further than the Youth Mental Health forums. Here you'll find people of all ages from all walks of life dealing with similar issues. You'll find a warm and welcoming community here if you're struggling with anxiety, depression, or any other mental health issue.
-								<br> </p><a class="btn btn-primary fs-5 me-2 py-2 px-4" role="button" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTER</a><a class="btn btn-outline-primary fs-5 py-2 px-4" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a> </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<section class="photo-gallery py-4 py-xl-5">
-			<div class="container">
-				<div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
-					<div class="col item">
-						<a href="assets/img/jason-goodman-Oalh2MojUuk-unsplash.jpg"><img class="img-fluid" src="assets/img/jason-goodman-Oalh2MojUuk-unsplash.jpg"></a>
-					</div>
-					<div class="col item">
-						<a href="assets/img/jed-villejo-bEcC0nyIp2g-unsplash.jpg"><img class="img-fluid" src="assets/img/jed-villejo-bEcC0nyIp2g-unsplash.jpg"></a>
-					</div>
-					<div class="col item">
-						<a href="assets/img/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg"><img class="img-fluid" src="assets/img/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg"></a>
-					</div>
-					<div class="col item">
-						<a href="assets/img/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg"><img class="img-fluid" src="assets/img/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg"></a>
-					</div>
-					<div class="col item">
-						<a href="assets/img/kylie-lugo-t0BavJY0M-U-unsplash.jpg"><img class="img-fluid" src="assets/img/kylie-lugo-t0BavJY0M-U-unsplash.jpg"></a>
-					</div>
-					<div class="col item">
-						<a href="assets/img/joel-mott-O9Ogddfvl-U-unsplash.jpg"><img class="img-fluid" src="assets/img/joel-mott-O9Ogddfvl-U-unsplash.jpg"></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END COMMUNITY -->
-		<!-- NEWSLETTER -->
-		<section class="py-4 py-xl-5">
-			<div class="container">
-				<div class="text-white bg-dark border rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5">
-					<div class="text-center text-lg-start py-3 py-lg-1">
-						<h2 class="text-uppercase fw-bold mb-2"><strong>Subscribe to our newsletter</strong></h2>
-						<p class="mb-0">Subscribe today and start taking charge of your mental health!</p>
-					</div>
-					<form class="d-flex justify-content-center flex-wrap my-2" method="post">
-						<div class="my-2">
-							<input class="form-control" type="email" name="email" placeholder="Your Email"> </div>
-						<div class="my-2">
-							<button class="btn btn-primary ms-sm-2" type="submit">SUBSCRIBE</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-	</section>
-	<!-- END NEWSLETTER -->
-	<!-- FOOTER -->
-	<footer>
-		<div>
-			<div class="container py-4 py-lg-5" style="border-top-width: 2px;border-top-style: solid;border-bottom-width: 2px;border-bottom-style: none;">
-				<div class="row justify-content-center">
-					<div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-						<h3 class="fs-6">About</h3>
-						<ul class="list-unstyled">
-							<li><a class="link-secondary" href="about.html">About Us</a></li>
-							<li><a class="link-secondary" href="mental-health.html">Understand Mental Health</a></li>
-							<li><a class="link-secondary" href="testimonials.html">Testimonials</a></li>
-							<li><a class="link-secondary" href="sitemap.xml" target="blank">Sitemap</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-						<h3 class="fs-6">Support</h3>
-						<ul class="list-unstyled">
-							<li><a class="link-secondary" href="peer-to-peer-chat.html">Peer-to-Peer Chat</a></li>
-							<li><a class="link-secondary" href="group-sessions.html">Group Sessions</a></li>
-							<li><a class="link-secondary" href="family-advisory.html">Family Advisory</a></li>
-							<li><a class="link-secondary" href="mental-health-test.html">Mental Health Check</a></li>
-							<li><a class="link-secondary" href="faq.html">Mental Health FAQ</a></li>
-							<li><a class="link-secondary" href="glossary.html">Glossary of Terms</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-						<h3 class="fs-6">Resources</h3>
-						<ul class="list-unstyled">
-							<li><a class="link-secondary" href="blog.html">Blog</a></li>
-							<li><a class="link-secondary" href="directory.html">Directory</a></li>
-							<li><a class="link-secondary" href="volunteer.html">Volunteer With Us</a></li>
-							<li><a class="link-secondary" href="donate.html">How to Donate</a></li>
-							<li><a class="link-secondary" href="youth-programs.html">Youth Programs</a></li>
-							<li><a class="link-secondary" href="hotlines.html">Emergency Help</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
-						<div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-suit-heart-fill">
-                                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                                </svg></span><span>KABATAAN.PH</span></div>
-						<p class="text-muted copyright">Kabataan.ph is a website that provides information about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.</p>
-					</div>
-				</div>
-				<hr>
-				<div class="d-flex justify-content-between align-items-center pt-3">
-					<p class="text-muted mb-0">COPYRIGHT &copy; 2022 KABATAAN.PH</p>
-					<ul class="list-inline mb-0">
-						<li class="list-inline-item">
-							<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
-								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-							</svg>
-						</li>
-						<li class="list-inline-item">
-							<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
-								<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
-							</svg>
-						</li>
-						<li class="list-inline-item">
-							<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
-								<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-							</svg>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- END FOOTER -->
-	<!-- LOGIN MODAL -->
-	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="loginModalLabel">Login</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="mb-3">
-							<label for="loginEmail" class="col-form-label">Email:</label>
-							<input type="email" class="form-control" id="loginEmail"> </div>
-						<div class="mb-3">
-							<label for="loginPassword" class="col-form-label">Password:</label>
-							<input type="password" class="form-control" id="loginPassword"> </div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Login</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- REGISTER MODAL -->
-	<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="registerModalLabel">Register</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="mb-3">
-							<label for="registerEmail" class="col-form-label">Email:</label>
-							<input type="email" class="form-control" id="registerEmail"> </div>
-						<div class="mb-3">
-							<label for="registerPassword" class="col-form-label">Password:</label>
-							<input type="password" class="form-control" id="registerPassword"> </div>
-						<div class="mb-3">
-							<label for="registerConfirmPassword" class="col-form-label">Confirm Password:</label>
-							<input type="password" class="form-control" id="registerConfirmPassword"> </div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Register</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END MODAL -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-	<script src="assets/js/Lightbox-Gallery.js"></script>
-	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-	<df-messenger intent="WELCOME" chat-title="Kabataan" agent-id="7876055a-5682-4fa6-8ee1-2730490bbbaf" language-code="en"></df-messenger>
-</body>
-
+    <!-- END ABOUT KABATAAN -->
+    <!-- CAMPAIGNS -->
+    <section>
+      <div>
+        <div class="container py-4 py-xl-5">
+          <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+              <h2 class="display-3 fw-bold text-center">OUR CAMPAIGNS</h2>
+              <p class="w-lg-50">
+                The #40SecondsOfHope, #VoicesOfHope, #UsapTayo, and
+                #KabataanTalks campaigns are all youth mental health campaigns
+                that aim to raise awareness about mental health and provide
+                support to those struggling with mental illness. These campaigns
+                provide a platform for young people to share their stories and
+                offer hope and support to others.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div>
+                <img
+                  class="rounded img-fluid d-block w-100 fit-cover"
+                  style="height: 200px"
+                  src="assets/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg"
+                />
+                <div class="py-4">
+                  <h4>#40SecondsOfHope</h4>
+                  <p>
+                    The #40SecondsOfHope campaign encourages young people to
+                    take action and get help if they feel suicidal. The campaign
+                    provides information on how to get help and support someone
+                    who is suicidal. The campaign also encourages young people
+                    to talk about their mental health and seek help if they
+                    struggle.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  class="rounded img-fluid d-block w-100 fit-cover"
+                  style="height: 200px"
+                  src="assets/img/pablo-heimplatz-EAvS-4KnGrk-unsplash.jpg"
+                />
+                <div class="py-4">
+                  <h4>#VoicesOfHope</h4>
+                  <p>
+                    The #VoicesofHope campaign is a youth mental health campaign
+                    that aims to provide support and resources to young people
+                    struggling with mental health. The campaign offers a
+                    platform for young people to share their stories and
+                    experiences and to connect with others who are going through
+                    similar struggles. The campaign also offers information and
+                    support on various topics related to mental health and
+                    provides a space for open discussion and dialogue about
+                    mental health.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  class="rounded img-fluid d-block w-100 fit-cover"
+                  style="height: 200px"
+                  src="assets/img/kelly-sikkema-XX2WTbLr3r8-unsplash.jpg"
+                />
+                <div class="py-4">
+                  <h4>#UsapTayo</h4>
+                  <p>
+                    #UsapTayo is a Youth Mental Health Campaign aimed at
+                    promoting mental health and wellbeing among young people in
+                    the Philippines. The campaign encourages young people to
+                    talk about their mental health, seek help if they are
+                    struggling, and support each other.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-grid">
+              <div>
+                <img
+                  class="rounded img-fluid d-block w-100 fit-cover"
+                  style="height: 200px"
+                  src="assets/img/papaioannou-kostas-tysecUm5HJA-unsplash.jpg"
+                />
+                <div class="py-4">
+                  <h4>#KabataanTalks</h4>
+                  <p>
+                    KabataanTalks is a national youth-led mental health campaign
+                    in the Philippines that aims to break the stigma around
+                    mental health and encourage open discussion about mental
+                    health issues among young people. The campaign provides a
+                    platform for young people to share their stories and
+                    experiences with mental health and to connect with others
+                    who can relate to their struggles. KabataanTalks also
+                    provides resources and information on mental health and
+                    offers support to young people struggling with mental
+                    health.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CAMPAIGNS -->
+    <!-- DATABASE AND DIRECTORY -->
+    <section class="py-4 py-xl-5">
+      <div class="container h-100">
+        <div class="text-white bg-primary border rounded border-0 p-4 py-5">
+          <div class="row h-100">
+            <div
+              class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center"
+            >
+              <div>
+                <h2 class="display-3 text-uppercase fw-bold text-white mb-3">
+                  Database &amp; Directory
+                </h2>
+                <p class="mb-4">
+                  Kabataan has a directory of mental health facilities,
+                  services, and organizations that can help people in need.
+                  These resources can provide support and assistance to those
+                  who are struggling with mental health issues. If you or
+                  someone you know requires mental health support, please
+                  consider reaching out to one of these organizations.
+                </p>
+                <a
+                  class="btn btn-light fs-5 py-2 px-4"
+                  role="button"
+                  href="directory.html"
+                  >BROWSE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END DATABASE AND DIRECTORY -->
+    <!-- LATEST NEWS AND UPDATES -->
+    <section>
+      <div>
+        <div class="container py-4 py-xl-5">
+          <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+              <h2 class="display-3 text-uppercase fw-bold">
+                Latest News and Updates
+              </h2>
+              <p class="w-lg-50">
+                Keep updated with the latest news and updates about Youth Mental
+                Health in the Philippines by reading our blog posts!
+              </p>
+            </div>
+          </div>
+          <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top w-100 d-block fit-cover"
+                  style="height: 200px"
+                  src="assets/img/lukas-rychvalsky-o0GhPKxe5GM-unsplash.jpg"
+                />
+                <div class="card-body p-4">
+                  <p class="text-primary card-text mb-0">Article</p>
+                  <h4 class="card-title">
+                    How to cope with feeling lonely at school
+                  </h4>
+                  <p class="card-text">
+                    If you're feeling lonely at school, you can do a few things
+                    to cope. First, try to find a club or activity you're
+                    interested in. This will help you make friends who share
+                    your interests. You can also try talking to your classmates
+                    and getting to know them better. Finally, talk to a teacher
+                    or counselor if you're still feeling lonely. They can help
+                    you find ways to make friends and feel less alone.
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                      width="50"
+                      height="50"
+                      src="assets/img/113265186.jpg"
+                    />
+                    <div>
+                      <p class="fw-bold mb-0">Len Marjorie Sy</p>
+                      <p class="mb-0">Author</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top w-100 d-block fit-cover"
+                  style="height: 200px"
+                  src="assets/img/giulia-bertelli-dvXGnwnYweM-unsplash.jpg"
+                />
+                <div class="card-body p-4">
+                  <p class="text-primary card-text mb-0">Article</p>
+                  <h4 class="card-title">
+                    How I learnt to show up for myself like I show up for others
+                  </h4>
+                  <p class="card-text">
+                    I realized that I needed to start showing up for myself the
+                    way I show up for others. I started by making time for
+                    myself every day, even if it was just 10 minutes. It wasn't
+                    always easy, but I slowly started to feel better and more
+                    like myself again. I also began to say no to things that
+                    didn't serve me and to make my wellbeing a priority.
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                      width="50"
+                      height="50"
+                      src="assets/img/294766511_10159238738653192_4062573335905881321_n.jpg"
+                    />
+                    <div>
+                      <p class="fw-bold mb-0">Odessa Faye Osilla</p>
+                      <p class="mb-0">Author</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top w-100 d-block fit-cover"
+                  style="height: 200px"
+                  src="assets/img/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
+                />
+                <div class="card-body p-4">
+                  <p class="text-primary card-text mb-0">Article</p>
+                  <h4 class="card-title">
+                    The validation of self-harm scars among the mental health
+                    community
+                  </h4>
+                  <p class="card-text">
+                    The validation of self-harm scars in the mental health
+                    community is a necessary process that allows individuals who
+                    self-harm to feel understood and supported. Validating
+                    self-harm scars can help individuals feel more comfortable
+                    in their own skin and encourage them to seek help for their
+                    mental health needs.
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                      width="50"
+                      height="50"
+                      src="assets/img/113756693.jpg"
+                    />
+                    <div>
+                      <p class="fw-bold mb-0">Wilfredo Louis Sumayan</p>
+                      <p class="mb-0">Author</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END LATEST NEWS AND UPDATES -->
+    <!-- TESTIMONIALS -->
+    <section>
+      <div>
+        <div class="container py-4 py-xl-5">
+          <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+              <h2 class="display-3 text-uppercase fw-bold">Testimonials</h2>
+            </div>
+          </div>
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  I am so grateful for the Youth Mental Health services offered
+                  by Kabataan. They have been an enormous help in my journey to
+                  recovery. The staff is incredibly understanding and
+                  supportive, and they have helped me to develop the skills I
+                  need to cope with my mental health challenges. I would highly
+                  recommend their services to anyone struggling with their
+                  mental health. Thank you, Kabataan, for everything.
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar%20(5).svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Mylene</p>
+                    <p class="mb-0">Caloocan City</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  Kabataan offers vital mental health services to youth in need.
+                  The support and care they provide are top-notch and have
+                  helped me immensely. I highly recommend their services to
+                  anyone struggling with mental health issues.
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar%20(4).svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Arlene</p>
+                    <p class="mb-0">Antipolo City</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  Kabataan offers an excellent youth mental health service. The
+                  counselors are caring and professional and seem to understand
+                  what young people are going through. They've helped me a lot,
+                  and I would recommend them to anyone who needs help. Thank
+                  you, Kabataan!
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar%20(3).svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Roselyn</p>
+                    <p class="mb-0">Basey, Samar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  Kabataan's youth mental health services are top-notch! They
+                  can provide support and guidance to young people who may be
+                  struggling with mental health issues. Their services are
+                  confidential and professional, and they can offer a safe space
+                  for young people to talk about their problems. I would highly
+                  recommend Kabataan to any young person struggling with mental
+                  health.
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar%20(1).svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Jan Camille</p>
+                    <p class="mb-0">Tacloban City</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  I'm so grateful for the Youth Mental Health services offered
+                  by Kabataan. They've provided me with a safe space to discuss
+                  my mental health and get the support I need. They've also
+                  helped me to understand my mental health and to develop
+                  healthy coping mechanisms. I highly recommend their services
+                  to anyone struggling with their mental health.
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar.svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Melalyn</p>
+                    <p class="mb-0">Quezon City</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <p class="bg-light border rounded border-0 border-light p-4">
+                  If you or someone you know is struggling with mental health, I
+                  highly recommend Kabataan's youth mental health services. They
+                  offer a safe and supportive space for young people to talk
+                  about their experiences and get their needed help. The staff
+                  is caring and knowledgeable, and they can help you find the
+                  resources you need to get through this tough time. Thank you,
+                  Kabataan, for everything you do!
+                </p>
+                <div class="d-flex p-4">
+                  <img
+                    class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                    width="50"
+                    height="50"
+                    src="assets/img/avatar%20(2).svg"
+                  />
+                  <div>
+                    <p class="fw-bold text-primary mb-0">Rommel</p>
+                    <p class="mb-0">Marikina City</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END TESTIMONIALS -->
+    <!-- COMMUNITY -->
+    <section class="py-4 py-xl-5">
+      <div class="community-bg">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div
+              class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center"
+            >
+              <div>
+                <h2 class="display-3 text-uppercase fw-bold mb-3">
+                  JOIN THE COMMUNITY!
+                </h2>
+                <p class="mb-4">
+                  Looking for a supportive community of others who understand
+                  what you're going through? Look no further than the Youth
+                  Mental Health forums. Here you'll find people of all ages from
+                  all walks of life dealing with similar issues. You'll find a
+                  warm and welcoming community here if you're struggling with
+                  anxiety, depression, or any other mental health issue. <br />
+                </p>
+                <a
+                  class="btn btn-primary fs-5 me-2 py-2 px-4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  >REGISTER</a
+                ><a
+                  class="btn btn-outline-primary fs-5 py-2 px-4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >LOGIN</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="photo-gallery py-4 py-xl-5">
+        <div class="container">
+          <div
+            class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos"
+            data-bss-baguettebox=""
+          >
+            <div class="col item">
+              <a href="assets/img/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/jason-goodman-Oalh2MojUuk-unsplash.jpg"
+              /></a>
+            </div>
+            <div class="col item">
+              <a href="assets/img/jed-villejo-bEcC0nyIp2g-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/jed-villejo-bEcC0nyIp2g-unsplash.jpg"
+              /></a>
+            </div>
+            <div class="col item">
+              <a href="assets/img/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg"
+              /></a>
+            </div>
+            <div class="col item">
+              <a href="assets/img/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg"
+              /></a>
+            </div>
+            <div class="col item">
+              <a href="assets/img/kylie-lugo-t0BavJY0M-U-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/kylie-lugo-t0BavJY0M-U-unsplash.jpg"
+              /></a>
+            </div>
+            <div class="col item">
+              <a href="assets/img/joel-mott-O9Ogddfvl-U-unsplash.jpg"
+                ><img
+                  class="img-fluid card"
+                  src="assets/img/joel-mott-O9Ogddfvl-U-unsplash.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END COMMUNITY -->
+      <!-- NEWSLETTER -->
+      <section class="py-4 py-xl-5">
+        <div class="container">
+          <div
+            class="text-white bg-dark border rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5"
+          >
+            <div class="text-center text-lg-start py-3 py-lg-1">
+              <h2 class="text-uppercase fw-bold mb-2">
+                <strong>Subscribe to our newsletter</strong>
+              </h2>
+              <p class="mb-0">
+                Subscribe today and start taking charge of your mental health!
+              </p>
+            </div>
+            <form
+              class="d-flex justify-content-center flex-wrap my-2"
+              method="post"
+            >
+              <div class="my-2">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="my-2">
+                <button class="btn btn-primary ms-sm-2" type="submit">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- END NEWSLETTER -->
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <div
+          class="container py-4 py-lg-5"
+          style="
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-style: none;
+          "
+        >
+          <div class="row justify-content-center">
+            <div
+              class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+            >
+              <h3 class="fs-6 footer-nav_links">About</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="link-secondary" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="link-secondary" href="mental-health.html"
+                    >Understand Mental Health</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="testimonials.html"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="sitemap.xml" target="blank"
+                    >Sitemap</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+            >
+              <h3 class="fs-6 footer-nav_links">Support</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="link-secondary" href="peer-to-peer-chat.html"
+                    >Peer-to-Peer Chat</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="group-sessions.html"
+                    >Group Sessions</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="family-advisory.html"
+                    >Family Advisory</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="mental-health-test.html"
+                    >Mental Health Check</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="faq.html"
+                    >Mental Health FAQ</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="glossary.html"
+                    >Glossary of Terms</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+            >
+              <h3 class="fs-6 footer-nav_links">Resources</h3>
+              <ul class="list-unstyled">
+                <li><a class="link-secondary" href="blog.html">Blog</a></li>
+                <li>
+                  <a class="link-secondary" href="directory.html">Directory</a>
+                </li>
+                <li>
+                  <a class="link-secondary" href="volunteer.html"
+                    >Volunteer With Us</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="donate.html">How to Donate</a>
+                </li>
+                <li>
+                  <a class="link-secondary" href="youth-programs.html"
+                    >Youth Programs</a
+                  >
+                </li>
+                <li>
+                  <a class="link-secondary" href="hotlines.html"
+                    >Emergency Help</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social"
+            >
+              <div class="fw-bold d-flex align-items-center mb-2">
+                <span
+                  class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-suit-heart-fill"
+                  >
+                    <path
+                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                    ></path></svg></span
+                ><span class="footer-nav_links">KABATAAN.PH</span>
+              </div>
+              <p class="text-muted copyright">
+                Kabataan.ph is a website that provides information about mental
+                health and wellbeing. The website aims to help people understand
+                and manage their mental health and to provide support and
+                information to those who care for someone with a mental health
+                problem.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between align-items-center pt-3">
+            <p class="text-muted mb-0">COPYRIGHT &copy; 2022 KABATAAN.PH</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-facebook"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="list-inline-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-twitter"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="list-inline-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-instagram"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- LOGIN MODAL -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="loginEmail" />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="col-form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER MODAL -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="registerEmail" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="registerEmail" />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="col-form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerConfirmPassword" class="col-form-label"
+                  >Confirm Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerConfirmPassword"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Kabataan"
+      agent-id="7876055a-5682-4fa6-8ee1-2730490bbbaf"
+      language-code="en"
+    ></df-messenger>
+  </body>
 </html>

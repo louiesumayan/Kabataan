@@ -3690,7 +3690,7 @@ fieldset:disabled .btn {
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-hover-color: rgb(82, 231, 101);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
   flex-direction: column;
@@ -6642,7 +6642,7 @@ fieldset:disabled .btn {
 }
 .link-secondary:focus,
 .link-secondary:hover {
-  color: #565e64 !important;
+  color: #198754 !important;
 }
 .link-success {
   color: #198754 !important;
@@ -10465,7 +10465,7 @@ fieldset:disabled .btn {
 
 /* new color palette */
 footer {
-  background: #18af78 !important;
+  background: rgb(3, 77, 87) !important;
 }
 
 .community-bg {
@@ -10474,5 +10474,10 @@ footer {
 }
 
 .navbar-light {
-  background: #18af78 !important;
+  background: rgb(3, 77, 87) !important;
+}
+
+.footer-nav_links {
+  color: #32cd32;
+  text-transform: uppercase;
 }
