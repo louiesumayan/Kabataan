@@ -52,8 +52,9 @@
 
 
 	<style>
-	    a { 
+	    .tab1 { 
 		text-decoration: none; 
+<<<<<<< HEAD
 		}
 	    a:link { 
 		text-decoration: none; 
@@ -62,10 +63,20 @@
 		text-decoration: none; 
 		 }
 	    a:hover { 
+=======
+		color:rgb(3, 77, 87)}
+	    .tab1:link { 
+		text-decoration: none; 
+		color:rgb(3, 77, 87); }
+	    .tab1:visited { 
+		text-decoration: none; 
+		color:rgb(3, 77, 87); }
+	    .tab1:hover { 
+>>>>>>> 4609737155158de1ee8e189c0e2097670c67e1cb
 		text-decoration: none;
 		
 		font-weight: 700; }
-	    a:active { 
+	    .tab1:active { 
 		text-decoration: none;
 		font-weight: 500; 
 		}
@@ -141,13 +152,13 @@
         <div class="container d-flex mt-3">
             <ul class="nav nav-tabs flex-grow-1 flex-nowrap">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#facilities" data-toggle="tab">Facilities</a>
+                  <a class="nav-link active tab1" aria-current="page" href="#facilities" data-toggle="tab">Facilities</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="#org" data-toggle="tab">Organizations</a>
+                  <a class="nav-link tab1" href="#org" data-toggle="tab">Organizations</a>
                 </li>
                 <li class="nav-item" >
-                    <a class="nav-link" href="#service" data-toggle="tab">Services</a>
+                    <a class="nav-link tab1" href="#service" data-toggle="tab">Services</a>
                   </li>
               </ul>
         </div>
