@@ -23,7 +23,7 @@ This is a serious problem and one that requires urgent attention. The youth are 
 
 <h2>About Kabataan.ph</h2>
 
-Kabataan.ph is a website that provides information and resources about mental health and wellbeing. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.
+Kabataan.ph is a website that provides information and resources about mental health and well-being. The website aims to help people understand and manage their mental health and to provide support and information to those who care for someone with a mental health problem.
  
 The website includes information about different mental health problems, treatments, and support services. There are also sections on self-care, coping with stress, and maintaining good mental health. Kabataan.ph also has a directory of mental health services in the Philippines.
  
